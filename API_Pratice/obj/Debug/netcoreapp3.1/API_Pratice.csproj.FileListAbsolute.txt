@@ -90,8 +90,6 @@ C:\Users\troyc\Documents\Studies\WebAPI\API_Pratice\API_Pratice\bin\Debug\netcor
 C:\Users\troyc\Documents\Studies\WebAPI\API_Pratice\API_Pratice\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\troyc\Documents\Studies\WebAPI\API_Pratice\API_Pratice\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\troyc\Documents\Studies\WebAPI\API_Pratice\API_Pratice\obj\Debug\netcoreapp3.1\API_Pratice.csproj.CopyComplete
-C:\Users\troyc\Documents\Studies\WebAPI\API_Pratice\API_Pratice\obj\Debug\netcoreapp3.1\API_Pratice.csproj.CoreCompileInputs.cache
-C:\Users\troyc\Documents\Studies\WebAPI\API_Pratice\API_Pratice\obj\Debug\netcoreapp3.1\API_Pratice.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\troyc\Documents\Studies\WebAPI\API_Pratice\API_Pratice\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\troyc\Documents\Studies\WebAPI\API_Pratice\API_Pratice\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
 C:\Users\troyc\Documents\Studies\WebAPI\API_Pratice\API_Pratice\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
@@ -122,3 +120,8 @@ C:\Users\troyc\Documents\Studies\WebAPI\API_Pratice\API_Pratice\bin\Debug\netcor
 C:\Users\troyc\Documents\Studies\WebAPI\API_Pratice\API_Pratice\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\troyc\Documents\Studies\WebAPI\API_Pratice\API_Pratice\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\troyc\Documents\Studies\WebAPI\API_Pratice\API_Pratice\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\troyc\Documents\Studies\WebAPI\API_Pratice\API_Pratice\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\troyc\Documents\Studies\WebAPI\API_Pratice\API_Pratice\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+C:\Users\troyc\Documents\Studies\WebAPI\API_Pratice\API_Pratice\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\troyc\Documents\Studies\WebAPI\API_Pratice\API_Pratice\obj\Debug\netcoreapp3.1\API_Pratice.csproj.CoreCompileInputs.cache
+C:\Users\troyc\Documents\Studies\WebAPI\API_Pratice\API_Pratice\obj\Debug\netcoreapp3.1\API_Pratice.MvcApplicationPartsAssemblyInfo.cache

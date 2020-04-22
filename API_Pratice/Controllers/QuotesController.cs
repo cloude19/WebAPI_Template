@@ -68,6 +68,8 @@ namespace API_Pratice.Controllers
                 targetEntity.Title = quote.Title;
                 targetEntity.Author = quote.Author;
                 targetEntity.Description = quote.Description;
+                targetEntity.Type = quote.Type;
+                targetEntity.CreatedAt = quote.CreatedAt;
 
                 //update row with changes
                 _quotesDbContext.Quotes.Update(targetEntity);
