@@ -26,10 +26,46 @@ namespace API_Pratice.Controllers
         //IaActionResult is going to return the http status along with the results of the query if needed. 
         // GET: api/Quotes
         [HttpGet]
-        public IActionResult Get()
+        public IActionResult Get(string sort = null)
         {
+            /*This one whould return  select * from Quotes */
+            //IEnumerable<Quote>
+            IQueryable<Quote> quotes;
+            switch (sort)
+            {
+                case "desc":
+                    quotes = _quotesDbContext.Quotes.OrderByDescending(q => q.CreatedAt);
+                    break;
+                case "asc":
+                    quotes = _quotesDbContext.Quotes.OrderBy(q => q.CreatedAt);
+                    break;
+                default:
+                    quotes = _quotesDbContext.Quotes;
+                    break;
+            }
             // return _quotesDbContext.Quotes;
-            return Ok(_quotesDbContext.Quotes);
+            return Ok(quotes);
+        }
+
+        /// <summary>
+        /// Will implement paging for the API.(Sending data in chunks
+        /// based off what page the user is currently on)
+        /// </summary>
+        /// <param name="pageNumber"></param>
+        /// <param name="pageSize"></param>
+        /// <returns></returns>
+        [HttpGet("[action]")]
+        public IActionResult PagingQuote(int? pageNumber, int? pageSize)
+        {
+            var quotes = _quotesDbContext.Quotes;
+
+            //check argumemnts for null if null 
+            var currentPageNumber = pageNumber != null ? (int)pageNumber : 1;
+            var currentPageSize = pageSize != null ? (int)pageSize : 3;
+
+            /*algorithm will skip and display records based off the 
+             page the client is currently viewing.*/
+            return Ok(quotes.Skip((currentPageNumber - 1) * currentPageSize).Take(currentPageSize));
         }
 
         // GET: api/Quotes/5
@@ -42,6 +78,13 @@ namespace API_Pratice.Controllers
                 return NotFound("Record not found");
             }
            return Ok(quote);
+        }
+
+        //Route: api/Quotes/TheAction/1?
+        [HttpGet("[action]/{id}")]
+        public int TheAction(int id = 0)
+        {
+            return id;
         }
 
         // POST: api/Quotes
