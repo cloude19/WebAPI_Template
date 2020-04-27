@@ -122,6 +122,18 @@ namespace API_Pratice.Controllers
             return Ok(@"record updated succefully.");
         }
 
+        /// <summary>
+        /// Search database for sepcific type.
+        /// </summary>
+        /// <param name="type"></param>
+        /// <returns></returns>
+        [HttpGet("[action]")]
+        public IActionResult SearchQuote(string type)
+        {
+          var quotes =  _quotesDbContext.Quotes.Where(q => q.Type.StartsWith(type));
+          return Ok(quotes);
+        }
+
         // DELETE: api/Quotes/5
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
